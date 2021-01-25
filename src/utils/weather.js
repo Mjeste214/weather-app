@@ -12,8 +12,8 @@ var weather = (latitude,longtitude,callback) => {
             callback('lokasyon yok!',undefined);
         }
         else{
-    
-            callback(undefined,response.body.current.weather_descriptions[0]);
+
+            callback(undefined,response.body.current);
         }
     });
 
